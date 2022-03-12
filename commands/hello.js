@@ -9,7 +9,7 @@ module.exports = {
     },
     min_args: 0,
     args: [],
-    aliases: ["h"],
+    aliases: ["hello", "h"],
     /**
      * @param {Client} bot 
      * @param {Message} message 

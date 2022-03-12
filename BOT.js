@@ -1,4 +1,4 @@
-
+const { keepAlive } = require('./server')
 const Discord = require("discord.js")
 const fs = require("fs")
 const mongoose = require("mongoose")
@@ -45,5 +45,5 @@ mongoose.connect(`mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@${
 loadEvents();
 loadCommands();
 bot.login(process.env.BOT_TOKEN);
-
+keepAlive();
 
